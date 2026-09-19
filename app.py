@@ -5,7 +5,7 @@ import requests
 
 st.set_page_config(layout='wide')
 
-with open('Pokemon_index.json', 'r', encoding='utf-8') as arquivo:
+with open('pokemon_index.json', 'r', encoding='utf-8') as arquivo:
     nomes_pokemons = json.load(arquivo)
 
 nome = st.selectbox('Escolha o seu pokemom:', nomes_pokemons.values())
